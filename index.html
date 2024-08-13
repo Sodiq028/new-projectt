@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -36,13 +37,17 @@
     </script>
   </head>
   <body>
-    <header>
-        <h1>scoot</h1>
-        <ul>
-            <li>About</li>
-            <li>Location</li>
-            <li>Careers</li>
-        </ul>
-        <button>Get Scootin</button>
+    <header class="container py-6 flex flex-row items-center gap-5 justify-between">
+        <div class="flex flex-row-reverse justify-center sm:flex-row items-center gap-20">
+            <h1 class="font-mono text-3xl font-bold opacity-80">scoot</h1>
+            <ul class="hidden sm:flex flex-row items-center gap-5">
+                <li class="font-mono text-sm font-bold opacity-40">About</li>
+                <li class="font-mono text-sm font-bold opacity-40">Location</li>
+                <li class="font-mono text-sm font-bold opacity-40">Careers</li>
+            </ul>
+            <i class="fa-solid fa-bars sm:hidden text-2xl" style="color:#FCB72B;"></i>
+        </div>
+        <button class="hidden sm:flex bg-sariq px-5 py-3 text-white font-mono">Get Scootin</button>
+    </header>
   </body>
 </html>
