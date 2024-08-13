@@ -24,13 +24,7 @@
       tailwind.config = {
         theme: {
           container: {
-            padding: {
-              DEFAULT: "1rem",
-              sm: "2rem",
-              lg: "4rem",
-              xl: "5rem",
-              "2xl": "6rem",
-            },
+            center: true,
           },
           fontFamily: {
             mono: ["Space Mono"],
@@ -41,6 +35,7 @@
               c_yellow: "#FCB72B",
               c_grey: "#939CAA",
               c_blue: "#495567",
+              c_white: "#F2F5F9",
             },
           },
         },
@@ -49,16 +44,24 @@
   </head>
   <body>
     <header
-      class="sticky top-0 z-10 bg-white px-[5rem] py-6 flex flex-row items-center gap-5 justify-between"
+      class="!container sticky top-0 z-10 bg-white px-[1rem] py-6 flex flex-row items-center gap-5 justify-between"
     >
       <div
         class="flex flex-row-reverse justify-center sm:flex-row items-center gap-20"
       >
-        <a href="index.html"><h1 class="font-mono text-3xl font-bold opacity-80">scoot</h1></a>
+        <a href="index.html"
+          ><h1 class="font-mono text-3xl font-bold opacity-80">scoot</h1></a
+        >
         <ul class="hidden sm:flex flex-row items-center gap-5">
-          <a href="about.html"><li class="font-mono text-sm font-bold opacity-40">About</li></a>
-          <a href=""><li class="font-mono text-sm font-bold opacity-40">Location</li></a>
-          <a href="careers.html"><li class="font-mono text-sm font-bold opacity-40">Careers</li></a>
+          <a href="about.html"
+            ><li class="font-mono text-sm font-bold opacity-40">About</li></a
+          >
+          <a href=""
+            ><li class="font-mono text-sm font-bold opacity-40">Location</li></a
+          >
+          <a href="careers.html"
+            ><li class="font-mono text-sm font-bold opacity-40">Careers</li></a
+          >
         </ul>
         <i
           class="fa-solid fa-bars sm:hidden text-2xl"
@@ -71,18 +74,22 @@
         Get Scootin
       </button>
     </header>
-    <main>
+    <main class="!container">
       <!-- FOR PAGE TITLE -->
 
-      <div class="h-[184.24px] flex flex-col justify-center relative">
-        <img class="absolute top-0 -z-10" src="./images/about.bg.png" alt="" />
-        <h1 class="px-[5rem] text-4xl font-mono font-bold text-white">About</h1>
+      <div class="h-[60px] sm:h-[80px] md:h-[100px] lg:h-[128px] xl:h-[184.24px] flex flex-col justify-center relative">
+        <img
+          class="absolute top-0 -z-10 w-screen"
+          src="./images/about.bg.png"
+          alt=""
+        />
+        <h1 class="pl-[5rem] text-3xl sm:text-4xl font-mono font-bold text-white">About</h1>
       </div>
 
       <!-- MAIN -->
 
       <section class="flex flex-col mt-20 gap-32">
-        <div class="pl-[5rem] flex flex-row items-center justify-between">
+        <div class="pl-[5rem] flex flex-col sm:flex-row items-center justify-between">
           <div class="flex flex-col items-start gap-5">
             <h1 class="text-4xl font-mono font-bold text-c_blue w-[500px]">
               Mobility for the digital era
@@ -187,6 +194,170 @@
           </div>
         </div>
       </section>
+
+      <!-- LAST SECTION -->
+
+      <section
+        class="flex flex-col items-center justify-center gap-14 mt-28 px-[5rem]"
+      >
+        <h1
+          class="text-4xl text-center font-mono font-bold text-c_blue w-[400px]"
+        >
+          FAQs
+        </h1>
+
+        <!-- FAQs - PART1 -->
+
+        <div class="flex flex-row items-start justify-between">
+          <h1
+            class="text-3xl text-start font-mono font-bold text-c_blue w-[400px]"
+          >
+            How it works
+          </h1>
+          <div class="flex flex-col items-start gap-5">
+            <details class="p-8 bg-c_white cursor-pointer">
+              <summary
+                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+              >
+                How do I download the app?
+                <i class="fa-solid fa-angle-down text-c_yellow"></i>
+              </summary>
+              <p class="w-[760px] text-c_blue mt-6 text-lg font-deca leading-7">
+                To download the Scoot app, you can search “Scoot” in both the
+                App and Google Play stores. An even simpler way to do it would
+                be to click the relevant link at the bottom of this page and
+                you’ll be re-directed to the correct page.
+              </p>
+            </details>
+            <details class="p-8 bg-c_white cursor-pointer">
+              <summary
+                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+              >
+                Can I find a nearby Scoots?
+                <i class="fa-solid fa-angle-down text-c_yellow"></i>
+              </summary>
+              <p class="w-[760px] text-c_blue mt-6 text-lg font-deca leading-7">
+                To download the Scoot app, you can search “Scoot” in both the
+                App and Google Play stores. An even simpler way to do it would
+                be to click the relevant link at the bottom of this page and
+                you’ll be re-directed to the correct page.
+              </p>
+            </details>
+            <details class="p-8 bg-c_white cursor-pointer">
+              <summary
+                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+              >
+                Do I need a license to ride?
+                <i class="fa-solid fa-angle-down text-c_yellow"></i>
+              </summary>
+              <p class="w-[760px] text-c_blue mt-6 text-lg font-deca leading-7">
+                To download the Scoot app, you can search “Scoot” in both the
+                App and Google Play stores. An even simpler way to do it would
+                be to click the relevant link at the bottom of this page and
+                you’ll be re-directed to the correct page.
+              </p>
+            </details>
+          </div>
+        </div>
+
+        <!-- FAQs - PART2 -->
+
+        <div class="flex flex-row items-start justify-between">
+          <h1
+            class="text-3xl text-start font-mono font-bold text-c_blue w-[400px]"
+          >
+            Safe driving
+          </h1>
+          <div class="flex flex-col items-start gap-5">
+            <details class="p-8 bg-c_white cursor-pointer">
+              <summary
+                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+              >
+                Should I wear a helmet?
+                <i class="fa-solid fa-angle-down text-c_yellow"></i>
+              </summary>
+              <p class="w-[760px] text-c_blue mt-6 text-lg font-deca leading-7">
+                Yes, please do! All cities have different laws. But we strongly
+                strongly strongly recommend always wearing a helmet regardless
+                of the local laws. We like you and we want you to be as safe as
+                possible while Scooting.
+              </p>
+            </details>
+            <details class="p-8 bg-c_white cursor-pointer">
+              <summary
+                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+              >
+                How about the rules & regulations?
+                <i class="fa-solid fa-angle-down text-c_yellow"></i>
+              </summary>
+              <p class="w-[760px] text-c_blue mt-6 text-lg font-deca leading-7">
+                To download the Scoot app, you can search “Scoot” in both the
+                App and Google Play stores. An even simpler way to do it would
+                be to click the relevant link at the bottom of this page and
+                you’ll be re-directed to the correct page.
+              </p>
+            </details>
+            <details class="p-8 bg-c_white cursor-pointer">
+              <summary
+                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+              >
+                What if I damage my Scoot?
+                <i class="fa-solid fa-angle-down text-c_yellow"></i>
+              </summary>
+              <p class="w-[760px] text-c_blue mt-6 text-lg font-deca leading-7">
+                To download the Scoot app, you can search “Scoot” in both the
+                App and Google Play stores. An even simpler way to do it would
+                be to click the relevant link at the bottom of this page and
+                you’ll be re-directed to the correct page.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER -->
+
+    <footer class="container mt-20">
+      <div
+      class="relative bg-[#495567] px-[15px] sm:px-[50px] lg:px-[80px] xl:px-[100px] 2xl:px-[100px] w-[100%]"
+      >
+      <img class="absolute bottom-0 right-0 z-10" src="./images/footer.bg.png" alt="">
+        <div
+          class="py-[70px] flex flex-col md:flex-row items-center justify-between"
+        >
+          <div>
+            <h1 class="text-[50px] font-medium text-white">
+              Sign up and <br />
+              Scoot off today
+            </h1>
+          </div>
+          <div class="flex flex-row gap-4">
+            <img src="/images/Group 28.svg" alt="" />
+            <img src="/images/Group 28 Copy.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div
+        class="py-7 px-[15px] sm:px-[50px] lg:px-[80px] xl:px-[100px] 2xl:px-[100px] flex flex-col md:flex-row justify-between bg-[#333A44]"
+      >
+        <div class="flex flex-row gap-14 items-center">
+          <a href="index.html"
+            ><h1 class="font-mono text-4xl text-white font-bold opacity-80">scoot</h1></a
+          >
+          <img src="/images/scoot.png" alt="" />
+          <ul class="flex flex-row gap-8 text-[#939CAA]">
+            <li>about</li>
+            <li>Location</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <div class="flex flex-row items-center gap-5">
+          <i class="fa-brands fa-square-facebook text-[30px] text-[orange]"></i>
+          <i class="fa-brands fa-twitter text-[30px] text-[orange]"></i>
+          <i class="fa-brands fa-instagram text-[30px] text-[orange]"></i>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
