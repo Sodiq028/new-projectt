@@ -44,7 +44,7 @@
   </head>
   <body>
     <header
-      class="!container sticky top-0 z-10 bg-white px-[1rem] py-6 flex flex-row items-center gap-5 justify-between"
+      class="!container sticky top-0 z-50 bg-white px-[1rem] xl:px-[5rem] py-6 flex flex-row items-center gap-5 justify-between"
     >
       <div
         class="flex flex-row-reverse justify-center sm:flex-row items-center gap-20"
@@ -77,7 +77,7 @@
     <main class="!container">
       <!-- FOR PAGE TITLE -->
 
-      <div class="h-[60px] sm:h-[80px] md:h-[100px] lg:h-[128px] xl:h-[184.24px] flex flex-col justify-center relative">
+      <div class="h-[60px] sm:h-[80px] lg:h-[128px] xl:h-[184.24px] flex flex-col justify-center relative">
         <img
           class="absolute top-0 -z-10 w-screen"
           src="./images/about.bg.png"
@@ -89,12 +89,12 @@
       <!-- MAIN -->
 
       <section class="flex flex-col mt-20 gap-32">
-        <div class="pl-[5rem] flex flex-col sm:flex-row items-center justify-between">
-          <div class="flex flex-col items-start gap-5">
-            <h1 class="text-4xl font-mono font-bold text-c_blue w-[500px]">
+        <div class="pl-[5rem] flex flex-col-reverse text-center xl:flex-row items-center justify-center xl:justify-between">
+          <div class="flex flex-col items-center xl:items-start gap-5">
+            <h1 class="text-3xl xl:text-4xl font-mono font-bold text-c_blue w-[350px] xl:w-[500px]">
               Mobility for the digital era
             </h1>
-            <p class="w-[435px] text-c_grey">
+            <p class="text-xs xl:text-base w-[300px] xl:w-[435px] text-c_grey">
               Getting around should be simple (and even fun!) for everyone. We
               embrace technology to provide low cost, smart access to scooters
               at your fingertips.
@@ -103,13 +103,13 @@
           <img class="w-[600px]" src="./images/mobility.png" alt="" />
         </div>
         <div
-          class="pr-[5rem] flex flex-row-reverse items-center justify-between"
+          class="pr-[5rem] flex flex-col-reverse text-center xl:flex-row-reverse items-center justify-center xl:justify-between"
         >
-          <div class="flex flex-col items-start gap-5">
-            <h1 class="text-4xl font-mono font-bold text-c_blue w-[400px]">
+          <div class="flex flex-col items-center xl:items-start gap-5">
+            <h1 class="text-3xl xl:text-4xl font-mono font-bold text-c_blue w-[300px] xl:w-[400px]">
               Better urban living
             </h1>
-            <p class="w-[435px] text-c_grey">
+            <p class="text-xs xl:text-base w-[300px] xl:w-[435px] text-c_grey">
               We're helping connect cities and bring people closer together. Our
               scooters are also fully-electric and we offset the minimal carbon
               footprint for each ride.
@@ -127,7 +127,7 @@
         >
           Our values
         </h1>
-        <div class="flex flex-row items-center justify-center gap-5">
+        <div class="flex flex-col xl:flex-row items-center justify-center gap-5">
           <div class="flex flex-col items-center gap-14">
             <div class="relative flex flex-col items-center">
               <img src="./images/profile1.png" alt="" class="w-[130px]" />
@@ -208,7 +208,7 @@
 
         <!-- FAQs - PART1 -->
 
-        <div class="flex flex-row items-start justify-between">
+        <div class="flex flex-col xl:flex-row items-center xl:items-start gap-5 xl:gap-0 justify-between">
           <h1
             class="text-3xl text-start font-mono font-bold text-c_blue w-[400px]"
           >
@@ -217,12 +217,12 @@
           <div class="flex flex-col items-start gap-5">
             <details class="p-8 bg-c_white cursor-pointer">
               <summary
-                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+                class="list-none flex flex-row items-center justify-between w-[350px] xl:w-[760px] text-lg xl:text-xl font-mono font-bold text-c_blue"
               >
                 How do I download the app?
                 <i class="fa-solid fa-angle-down text-c_yellow"></i>
               </summary>
-              <p class="w-[760px] text-c_blue mt-6 text-lg font-deca leading-7">
+              <p class="w-80 xl:w-[760px] text-c_blue mt-6 text-lg font-deca leading-7">
                 To download the Scoot app, you can search “Scoot” in both the
                 App and Google Play stores. An even simpler way to do it would
                 be to click the relevant link at the bottom of this page and
@@ -231,7 +231,7 @@
             </details>
             <details class="p-8 bg-c_white cursor-pointer">
               <summary
-                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+                class="list-none flex flex-row items-center justify-between w-[350px] xl:w-[760px] text-lg xl:text-xl font-mono font-bold text-c_blue"
               >
                 Can I find a nearby Scoots?
                 <i class="fa-solid fa-angle-down text-c_yellow"></i>
@@ -245,7 +245,7 @@
             </details>
             <details class="p-8 bg-c_white cursor-pointer">
               <summary
-                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+                class="list-none flex flex-row items-center justify-between w-[350px] xl:w-[760px] text-lg xl:text-xl font-mono font-bold text-c_blue"
               >
                 Do I need a license to ride?
                 <i class="fa-solid fa-angle-down text-c_yellow"></i>
@@ -262,7 +262,7 @@
 
         <!-- FAQs - PART2 -->
 
-        <div class="flex flex-row items-start justify-between">
+        <div class="flex flex-col xl:flex-row items-center xl:items-start gap-5 xl:gap-0 justify-between">
           <h1
             class="text-3xl text-start font-mono font-bold text-c_blue w-[400px]"
           >
@@ -271,7 +271,7 @@
           <div class="flex flex-col items-start gap-5">
             <details class="p-8 bg-c_white cursor-pointer">
               <summary
-                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+                class="list-none flex flex-row items-center justify-between w-[350px] xl:w-[760px] text-lg xl:text-xl font-mono font-bold text-c_blue"
               >
                 Should I wear a helmet?
                 <i class="fa-solid fa-angle-down text-c_yellow"></i>
@@ -285,7 +285,7 @@
             </details>
             <details class="p-8 bg-c_white cursor-pointer">
               <summary
-                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+                class="list-none flex flex-row items-center justify-between w-[350px] xl:w-[760px] text-lg xl:text-xl font-mono font-bold text-c_blue"
               >
                 How about the rules & regulations?
                 <i class="fa-solid fa-angle-down text-c_yellow"></i>
@@ -299,7 +299,7 @@
             </details>
             <details class="p-8 bg-c_white cursor-pointer">
               <summary
-                class="list-none flex flex-row items-center justify-between w-[760px] text-xl font-mono font-bold text-c_blue"
+                class="list-none flex flex-row items-center justify-between w-[350px] xl:w-[760px] text-lg xl:text-xl font-mono font-bold text-c_blue"
               >
                 What if I damage my Scoot?
                 <i class="fa-solid fa-angle-down text-c_yellow"></i>
@@ -324,7 +324,7 @@
       >
       <img class="absolute bottom-0 right-0 z-10" src="./images/footer.bg.png" alt="">
         <div
-          class="py-[70px] flex flex-col md:flex-row items-center justify-between"
+          class="py-[70px] flex flex-col xl:flex-row items-center justify-between"
         >
           <div>
             <h1 class="text-[50px] font-medium text-white">
@@ -339,7 +339,7 @@
         </div>
       </div>
       <div
-        class="py-7 px-[15px] sm:px-[50px] lg:px-[80px] xl:px-[100px] 2xl:px-[100px] flex flex-col md:flex-row justify-between bg-[#333A44]"
+        class="py-7 px-[15px] sm:px-[50px] lg:px-[80px] xl:px-[100px] 2xl:px-[100px] flex flex-col xl:flex-row justify-between bg-[#333A44]"
       >
         <div class="flex flex-row gap-14 items-center">
           <a href="index.html"
